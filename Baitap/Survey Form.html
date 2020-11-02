@@ -6,12 +6,12 @@
 </head>
 
 <body>
-
+<form>
 <h1>Market research survey</h1>
-<p>Please take a few moments to complete this satisfaction survey.</p>
+<p style="font-weight: bold">Please take a few moments to complete this satisfaction survey.</p>
 <p>----------------------------------------------------------------------------------------------------------------------------------------</p>
 <P>What is  your age range? </P>
-<select>
+<select style="width: 300px">
     <option name="age range"/>18-24
     <option name="age range"/>25-34
     <option name="age range"/>35-50
@@ -19,7 +19,7 @@
 </select>
 <br>
 <p>What is your yearly income range?</p>
-<select>
+<select style="width: 300px">
     <option name="income"/>$0-$25,000
     <option name="income"/>$25,001-$50,000
     <option name="income"/>$50,001-75,000
@@ -51,7 +51,7 @@
 <label>$</label>
 <input type="text" name="pay for new"/>
 <label>.</label>
-<input type="text" name="cent"/>
+<input type="text" name="cent" style="width: 20px"/>
 <br>
 <label style="margin-left: 12px">Dollars</label>
 <label style="margin-left: 125px">Cent</label>
@@ -61,7 +61,7 @@
 <br>
 <p>Please grade your level of argeement with the following statements. </p>
 <table border="1px">
-    <tr>
+    <tr style="background-color: lightgray">
         <th></th>
         <th>Strongly Disagree</th>
         <th>Disagree</th>
@@ -70,28 +70,28 @@
     </tr>
     <tr>
         <td style="font-weight: bold">Our product are priced fairly.</td>
-        <td style="text-align: center"><input type="radio" name="a"/>1</td>
-        <td style="text-align: center"><input type="radio" name="a"/>2</td>
-        <td style="text-align: center"><input type="radio" name="a"/>3</td>
-        <td style="text-align: center"><input type="radio" name="a"/>4</td>
+        <td style="text-align: center"><input type="radio" name="a"/><br>1</td>
+        <td style="text-align: center"><input type="radio" name="a"/><br>2</td>
+        <td style="text-align: center"><input type="radio" name="a"/><br>3</td>
+        <td style="text-align: center"><input type="radio" name="a"/><br>4</td>
     </tr>
-    <tr>
+    <tr style="background-color: whitesmoke">
         <td style="font-weight: bold">Our product are high quality.</td>
-        <td style="text-align: center"><input type="radio" name="b"/>1</td>
-        <td style="text-align: center"><input type="radio" name="b"/>2</td>
-        <td style="text-align: center"><input type="radio" name="b"/>3</td>
-        <td style="text-align: center"><input type="radio" name="b"/>4</td>
+        <td style="text-align: center"><input type="radio" name="b"/><br>1</td>
+        <td style="text-align: center"><input type="radio" name="b"/><br>2</td>
+        <td style="text-align: center"><input type="radio" name="b"/><br>3</td>
+        <td style="text-align: center"><input type="radio" name="b"/><br>4</td>
     </tr>
     <tr>
         <td style="font-weight: bold">You would recommend our product to a friend or a coworker .</td>
-        <td style="text-align: center"><input type="radio" name="c"/>1</td>
-        <td style="text-align: center"><input type="radio" name="c"/>2</td>
-        <td style="text-align: center"><input type="radio" name="c"/>3</td>
-        <td style="text-align: center"><input type="radio" name="c"/>4</td>
+        <td style="text-align: center"><input type="radio" name="c"/><br>1</td>
+        <td style="text-align: center"><input type="radio" name="c"/><br>2</td>
+        <td style="text-align: center"><input type="radio" name="c"/><br>3</td>
+        <td style="text-align: center  " ><input type="radio" name="c"/><br>4</td>
     </tr>
 </table>
 <br>
-<input type="submit" value="submit"/>
-
+<input type="submit" value="Submit"/>
+</form>
 </body>
 </html>
