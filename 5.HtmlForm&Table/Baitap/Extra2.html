@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header{text-align: center;color: blue}
+        table{border-spacing: 5px; background-color: antiquewhite}
+        .c{background-color: antiquewhite}
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr style="background-color: wheat">
+            <td COLSPAN="4" class="header"><h3>ĐĂNG KÝ HỌC VIÊN</h3></td>
+        </tr>
+        <tr class="c">
+            <td>Họ và tên:</td>
+            <td colspan="3"><input type="text" name="name"></td>
+        </tr>
+        <tr class="c">
+            <td>Ngày sinh: </td>
+            <td colspan="2"><input type="text"name="birth"</td>
+            <td></td>
+        </tr>
+        <tr class="c">
+            <td>Giới tính: </td>
+            <td><input type="radio" name="gender"/>Nam</td>
+            <td><input type="radio" name="gender"/>Nữ</td>
+            <td></td>
+        </tr>
+        <tr class="c">
+            <td>Địa chỉ: </td>
+            <td colspan="2" name="address"><textarea></textarea></td>
+            <td></td>
+        </tr>
+        <tr class="c">
+            <td>Lớp: </td>
+            <td>
+                <select name="class">
+                    <option>-Class-</option>
+                    <option>Java</option>
+                    <option>Jquery</option>
+                    <option>Html</option>
+            </td>
+        </tr>
+        <tr class="c">
+            <td>Email: </td>
+            <td name="email" colspan="3"><input type="text" name="email"/></td>
+        </tr>
+        <tr class="c">
+            <td class="c">Điện thoại: </td>
+            <td colspan="3 name=phone"> <input type="number" name="phone"/></td>
+        </tr>
+        <tr class="c">
+            <td></td>
+            <td><input type="submit" value="Đăng ký"/></td>
+            <td><input type="reset" value="Nhập lại"/></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
