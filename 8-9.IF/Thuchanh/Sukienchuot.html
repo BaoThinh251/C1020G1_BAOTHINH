@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="download.jfif" id="img1"/>
+<p>Click this button to make the ball move right.</p>
+<button type="button" onclick="moveright()">Click me!</button>
+<script>
+    let ImgObj = document.getElementById('img1');
+    function init() {
+        ImgObj  = document.getElementById('img1');
+        ImgObj.style.position = 'relative';
+        ImgObj.style.left = "0px";
+    }
+    function moveright() {
+        ImgObj.style.left = parseInt(ImgObj.style.left) + 10 + "px";
+
+    }
+    window.onload = init;
+
+</script>
+</body>
+</html>
