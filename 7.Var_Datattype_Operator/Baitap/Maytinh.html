@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Caculator</th>
+    </tr>
+    <tr>
+        <td colspan="2"><input id="num1"/></td>
+        <td colspan="2"><input id="num2"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" onclick="cal('+')" value="Addition (+)"/></td>
+        <td><input type="button" onclick="cal('-')" value="Minus (-)"/></td>
+        <td><input type="button" onclick="cal('*')" value="Multiple (*)"/></td>
+        <td><input type="button" onclick="cal('/')" value="Divide (/)"/></td>
+    </tr>
+</table>
+<script>
+    let num1 = document.getElementById("num1");
+    let num2 = document.getElementById("num2");
+    let result = 0;
+    function cal(calculator) {
+        if(calculator === '+'){
+            result = parseInt(num1.value) + parseInt(num2.value);
+        }else if(calculator === '-'){
+            result = num1.value - num2.value;
+        }else if(calculator === '*'){
+            result = num1.value * num2.value;
+        }else if(calculator === '/')
+        {
+            if (num2.value === 0){ result = "Can't divive by 0"}
+            else {result = num1.value / num2.value;
+        }
+    }
+    alert(result);}
+</script>
+</body>
+</html>
