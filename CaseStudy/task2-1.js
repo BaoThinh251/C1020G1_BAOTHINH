@@ -1,8 +1,8 @@
-let discount = document.getElementById(discount);
-let rentdays = document.getElementById(rentdays);
-let typeofroom = document.getElementById(typeofroom);
+let dis = document.getElementById("discount");
+let rent = document.getElementById("rentdays");
+let typeroom = document.getElementById("typeofroom");
 let result;
 function submit() {
-    result = parseInt(rentdays.value) * parseInt(typeofroom.value) * (1-parseInt(discount.value)/100)
-    alert(result)
+    result = (1-parseInt(dis.value)/100) * (parseInt(rent.value)) * (parseInt(typeroom.value));
+    alert(result + '$');
 }

@@ -23,7 +23,7 @@
     </tr>
     <tr>
         <th class="text">Địa chỉ: </th>
-        <td><textarea name="Cmnd"></textarea></td>
+        <td><textarea name="address"></textarea></td>
     </tr>
     <tr>
         <th class="text">Customer rank: </th>
@@ -39,7 +39,7 @@
     </tr>
     <tr>
         <th class="text">Discount: </th>
-        <td><input type="text" name="discount" id="discount"/></td>
+        <td><input type="text" name="discount" id='discount'/></td>
     </tr>
     <tr>
         <th class="text">Số lượng khách đi kèm: </th>
@@ -47,15 +47,15 @@
     </tr>
     <tr>
         <th class="text">Số ngày thuê: </th>
-        <td><input type="text" name="dayrents" id="rentdays"/></td>
+        <td><input type="text" name="rentdays" id='rentdays'/></td>
     </tr>
     <tr>
         <th class="text">Loại dịch vụ: </th>
         <td>
-            <select name="typeofroom" id="typeofroom">
-                <option value="500">Villa</option>
-                <option value="300">House</option>0
-                <option value="150">Room</option>
+            <select name="typeofroom" id='typeofroom'>
+                <option value="500">Villa-500$</option>
+                <option value="300">House-300$</option>0
+                <option value="150">Room-150$</option>
             </select>
         </td>
     </tr>
@@ -69,8 +69,12 @@
             </select>
         </td>
     </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="submit()">Đăng ký</button>
+        </td>
+    </tr>
 </table>
-    <button type="button" onclick="submit" id="submit">Đăng ký</button>
     <script src="task2-1.js"></script>
 </body>
 </html>
