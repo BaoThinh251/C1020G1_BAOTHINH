@@ -5,56 +5,39 @@
     <title>Title</title>
 </head>
 <body>
+<form name="calculator">
 <table border="2px">
     <tr>
         <td colspan="4">
-            <input id="cal" type="number"/>
+            <input type="text" name="cal"  disabled>
         </td>
     </tr>
     <tr>
-        <td><button type="button" id="1" onclick="1">1</button></td>
-        <td><button type="button" id="2" onclick="2">2</button></td>
-        <td><button type="button" id="3" onclick="3">3</button></td>
-        <td><button type="button" id="+" onclick="plus">+</button></td>
+        <td><input type="button" onclick="calculator.cal.value += 1" value="1"></td>
+        <td><input type="button" onclick="calculator.cal.value += 2" value="2"></td>
+        <td><input type="button" onclick="calculator.cal.value += 3" value="3"></td>
+        <td><input type="button" onclick="calculator.cal.value += '+'" value="+"></td>
     </tr>
     <tr>
-        <td><button type="button" id="4">4</button></td>
-        <td><button type="button" id="5">5</button></td>
-        <td><button type="button" id="6">6</button></td>
-        <td><button type="button" id="-">-</button></td>
+        <td><input type="button" onclick="calculator.cal.value += 4" value="4"></td>
+        <td><input type="button" onclick="calculator.cal.value += 5" value="5"></td>
+        <td><input type="button" onclick="calculator.cal.value += 6" value="6"></td>
+        <td><input type="button" onclick="calculator.cal.value += '-'" value="-"></td>
     </tr>
     <tr>
-        <td><button type="button" id="7">7</button></td>
-        <td><button type="button" id="8">8</button></td>
-        <td><button type="button" id="9">9</button></td>
-        <td><button type="button" id="*">*</button></td>
+        <td><input type="button" onclick="calculator.cal.value += 7" value="7"></td>
+        <td><input type="button" onclick="calculator.cal.value += 8" value="8"></td>
+        <td><input type="button" onclick="calculator.cal.value += 9" value="9"></td>
+        <td><input type="button" onclick="calculator.cal.value += '*'" value="*"></td>
     </tr>
     <tr>
-        <td><button type="button" id="C">C</button></td>
-        <td><button type="button" id="0">0</button></td>
-        <td><button type="button" id="=">=</button></td>
-        <td><button type="button" id="/">/</button></td>
+        <td><input type="button" onclick="calculator.cal.value += ''" value="C"></td>
+        <td><input type="button" onclick="calculator.cal.value += 0" value="0"></td>
+        <td><input type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+        <td><input type="button" onclick="calculator.cal.value += '/'" value="/"></td>
     </tr>
 </table>
-<script>
-    let mot = document.getElementById('1') ;
-    let hai = document.getElementById('2') ;
-    let ba =  document.getElementById('3') ;
-    let bon = document.getElementById('4');
-    let nam = document.getElementById('5');
-    let sau = document.getElementById('6');
-    let bay = document.getElementById('7');
-    let tam = document.getElementById('8');
-    let chin = document.getElementById('9');
-    let add = document.getElementById('+');
-    let min = document.getElementById('-');
-    let mul = document.getElementById('*');
-    let div = document.getElementById('/');
-    let zer = document.getElementById('0');
-    let C = document.getElementById('C');
-    let equal = document.getElementById('=');
-
-</script>
+</form>
 
 </body>
 </html>
