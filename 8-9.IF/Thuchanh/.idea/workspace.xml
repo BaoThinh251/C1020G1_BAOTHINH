@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8105c6fa-216b-4bbd-9ef4-9fa545e89caa" name="Default Changelist" comment="" />
+    <list default="true" id="8105c6fa-216b-4bbd-9ef4-9fa545e89caa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BMI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Baitap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,10 +44,17 @@
       <option name="presentableId" value="Default" />
       <updated>1604548643052</updated>
       <workItem from="1604548644330" duration="1177000" />
+      <workItem from="1604627329590" duration="2484000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="130" key="FileChooserDialogImpl" timestamp="1604629808650">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="130" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604629808650" />
   </component>
 </project>
