@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Chiều cao: </th>
+        <td><input type="text" id="h" value="0"/></td>
+    </tr>
+    <tr>
+        <th>Cân nặng: </th>
+        <td><input type="text" id="w" value="0"/></td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="calcu()">Tính BMI</button>
+        </td>
+    </tr>
+</table>
+<script>
+
+    function calcu() {
+        let h = document.getElementById('h').value;
+        let w = document.getElementById('w').value;
+        let BMI = (parseFloat(w) / (parseFloat(h) * parseFloat(h)));
+    if(BMI > 18){document.write("Underweight");
+    } else if(BMI < 25.0){document.write("Normal");
+    } else if (BMI < 30.0){document.write("Overweight");
+    } else {document.write("Obese");}
+    }
+
+</script>
+</body>
+</html>
