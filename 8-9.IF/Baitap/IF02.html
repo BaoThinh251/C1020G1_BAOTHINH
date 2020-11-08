@@ -37,11 +37,96 @@
     document.writeln("Diện tích tam giác vuông là: " + Striangle);
 </script>
 <br>-->
-<script>
+<!--<script>
 let a = parseFloat(prompt("biến 1: "));
 let b = parseFloat(prompt("biến 2: "));
-let x = parseFloat(prompt("Ẩn: "));
-let result = (a * x + b == 0);
+let x = ( -b / a );
+if(a == 0 && b == 0){
+    document.writeln("phương trình có vô số nghiệm!");
+} else if(a==0 && b!==0){
+    document.writeln("Phương trình vô nghiệm!");
+} else if(a!=0 && b!=0){
+    document.writeln(x);
+}
 </script>
+<br>-->
+<!--<script>
+let a = parseFloat(prompt("Nhập a: "));
+let b = parseFloat(prompt("Nhập b: "));
+let c = parseFloat(prompt("Nhập c: "));
+let x , y , delta;
+delta = (b*b-(4*a*c));
+x = ((-b) - Math.sqrt(delta))/(2*a);
+y = ((-b) + Math.sqrt(delta))/(2*a);
+if(delta < 0){
+    document.writeln("Phương trình vô nghiệm!");
+} else if(delta == 0){
+    document.writeln("Phương trình có nghiệm kép: " + ((-b)/2*a));
+} else {
+    document.writeln(x);document.writeln(y);
+}
+</script>
+<br>-->
+<!--<script>
+    let age = parseInt(prompt("Nhập số: "));
+    if(age > 0 && age < 120){
+        document.writeln("Đây là tuổi một người!");
+    } else {
+        document.writeln("Không phải tuổi người!");
+    }
+</script>-->
+<!--<script>
+    let a = prompt("Nhập số a: ");
+    let b = prompt("Nhập số b: ");
+    let c = prompt("Nhập số c: ");
+    switch (true) {
+    case a > 0 :
+    case b > 0 :
+    case c > 0 :
+        alert("Đây là cạnh của tam giác!");
+        break;
+    default :
+        alert("Đây không phải cạnh của tam giác!");
+        break;
+    }
+</script>
+<br>-->
+<!--<script>
+    let Kwh = parseFloat(prompt("Nhập số chữ điện: "));
+    if (Kwh < 100){
+        document.writeln("Tiền điện là: " + 2000*Kwh);
+    } else if (Kwh < 300) {
+        document.writeln("Tiền điện là: " + 3000*Kwh);
+    } else if (Kwh < 500) {
+        document.writeln("Tiền điện là:" + 5000*Kwh);
+    } else {
+        document.writeln("Tiền điện là: " + 6500*Kwh);
+    }
+</script>
+<br>-->
+<!--<script>
+    let thunhap = parseFloat(prompt("Nhập thu nhập cá nhân: "));
+    if (thunhap < 1000000){
+        document.writeln("Thuế là: " + (thunhap*10/100));
+    } else if (thunhap < 3000000) {
+        document.writeln("Tiền điện là: " + (thunhap*12.5/100));
+    } else if (Kwh < 5000000) {
+        document.writeln("Tiền điện là:" + (thunhap*15/100));
+    } else {
+        document.writeln("Tiền điện là: " + (thunhap*17.5/100));
+    }
+</script>
+<br>-->
+<!--<script>
+    let vay = prompt("Nhập số tiền vay: ");
+    let time = prompt("Kì hạn vay: ");
+    if(time < 12){
+        document.writeln("Tiền lãi mỗi tháng là: " + vay*5/100);
+    } else if(time < 24){
+        document.writeln("Tiền lãi mỗi tháng là: " + vay*6.5/100);
+    } else {
+        document.writeln("Tiền lãi mỗi tháng là: " + vay*7/100);
+    }
+</script>-->
 </body>
 </html>
