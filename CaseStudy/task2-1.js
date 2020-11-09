@@ -9,16 +9,17 @@ let cusrank = document.getElementById("cusrank");
 let roomgrade = document.getElementById("roomgrade");
 let addcus = document.getElementById("+cus");
 let result;
-if(rent < 1){
-    result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value;
-} else if(rent < 4){
-    result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value - 10;
-} else if(rent < 7){
-    result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value - 20;
-} else {
-    result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value - 30;
-}
+
 function submit() {
+    if(rent < 1){
+        result = parseFloat(typeroom.value) * parseFloat(rent.value) * (1-parseFloat(dis.value)/100) - parseFloat(addr.value) - parseFloat(cusrank.value);
+    } else if(rent < 4){
+        result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value - 10;
+    } else if(rent < 7){
+        result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value - 20;
+    } else {
+        result = typeroom.value * rent.value * (1-dis/100) - addr.value - cusrank.value - 30;
+    }
     document.getElementById("discountdisplay").innerHTML = dis.value;
     document.getElementById("rentdaydisplay").innerHTML = rent.value;
     document.getElementById("typeroomdisplay").innerHTML = typeroom.value;

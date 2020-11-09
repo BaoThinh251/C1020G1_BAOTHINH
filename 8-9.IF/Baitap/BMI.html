@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,11 @@
 <table>
     <tr>
         <th>Chiều cao: </th>
-        <td><input type="text" id="h" value="0"/></td>
+        <td><input type="text" id="height" value="0"/></td>
     </tr>
     <tr>
         <th>Cân nặng: </th>
-        <td><input type="text" id="w" value="0"/></td>
+        <td><input type="text" id="weight" value="0"/></td>
     </tr>
     <tr>
         <td>
@@ -23,8 +23,8 @@
 <script>
 
     function calcu() {
-        let h = document.getElementById('h').value;
-        let w = document.getElementById('w').value;
+        let h = document.getElementById('height').value;
+        let w = document.getElementById('weight').value;
         let BMI = (parseFloat(w) / (parseFloat(h) * parseFloat(h)));
     if(BMI > 18){document.write("Underweight");
     } else if(BMI < 25.0){document.write("Normal");

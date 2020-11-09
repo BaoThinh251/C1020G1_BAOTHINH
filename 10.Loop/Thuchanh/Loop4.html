@@ -9,24 +9,24 @@
     let y = 1;
     let x = 1;
     let ban = "<table border='1' width='300' cellspacing='0' cellpadding='3'/>"
-        //  for(; y < 11; y++){
-        //ban = ban + "<tr>";
-        //for(; x < 11 ; x++){
-        //    ban = ban + "<td>" + x*y + "</td>" ;
-    //}ban = ban +  "</tr>";
-    //}ban = ban + "</table>";
-    //document.writeln(ban)
-
-    while(y < 11){
+    for(y = 1 ; y < 11; y++){
         ban = ban + "<tr>";
-        while (x < 11){
-            ban = ban + "<td>" + x*y + "</td>";
-            x++;
-        }ban = ban + "</tr>";
-        x=1;
-        y++;
+        for(x = 1 ; x < 11 ; x++){
+            ban = ban + "<td>" + x*y + "</td>" ;
+    }ban = ban +  "</tr>";
     }ban = ban + "</table>";
     document.writeln(ban)
+
+    //while(y < 11){
+      //  ban = ban + "<tr>";
+        //while (x < 11){
+          //  ban = ban + "<td>" + x*y + "</td>";
+            //x++;
+        //}ban = ban + "</tr>";
+        //x=1;
+        //y++;
+    //}ban = ban + "</table>";
+    //document.writeln(ban)
 </script>
 </body>
 </html>
