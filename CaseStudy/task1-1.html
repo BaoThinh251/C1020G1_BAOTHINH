@@ -23,17 +23,24 @@
     </tr>
     <tr>
         <th class="text">Địa chỉ: </th>
-        <td><textarea name="address" id="address"></textarea></td>
+        <td>
+            <select name="address" id="address">
+                <option value="20">Đà Nẵng</option>
+                <option value=10>Huế</option>
+                <option value="5">Quảng Nam</option>
+                <option value="0">Khác</option>
+            </select>
+        </td>
     </tr>
     <tr>
         <th class="text">Customer rank: </th>
         <td>
             <select name="customer rank" id="cusrank">
-            <option>Diamond</option>
-            <option>Platinium</option>
-            <option>Gold</option>
-            <option>Silver</option>
-            <option>Member</option>
+            <option value="15">Diamond</option>
+            <option value="10">Platinium</option>
+            <option value="5">Gold</option>
+            <option value="2">Silver</option>
+            <option value="0">Member</option>
             </select>
         </td>
     </tr>
@@ -72,19 +79,56 @@
     <tr>
         <td>
             <button type="button" onclick="submit()">Đăng ký</button>
+            <button type="reset" onclick="reset()">Edit</button>
         </td>
     </tr>
 </table>
-<p id="cost"></p>
-<p id="ID"></p>
-<p id="bday"></p>
-<p id="mail"></p>
-<p id="addr"></p>
-<p id="cusranking"></p>
-<p id="+cust"></p>
-<p id="roomgrad"></p>
-
-
+<table >
+    <tr>
+        <th class="text">Số tiền phải trả: </th>
+        <td id="cost"></td>
+    </tr>
+    <tr>
+        <th class="text">CMND/Căn cước công dân:</th>
+        <td id="ID"></td>
+    </tr>
+    <tr>
+        <th class="text">Ngày tháng năm sinh:</th>
+        <td id="bday"></td>
+    </tr>
+    <tr>
+        <th class="text">Email:</th>
+        <td id="mail"></td>
+    </tr>
+    <tr>
+        <th class="text">Địa chỉ:</th>
+        <td id="addr"></td>
+    </tr>
+    <tr>
+        <th class="text">Customer rank: </th>
+        <td id="cusranking"></td>
+    </tr>
+    <tr>
+        <th class="text">Giảm giá: </th>
+        <td id="discountdisplay"></td>
+    </tr>
+    <tr>
+        <th class="text">Số khách đi kèm:</th>
+        <td id="+cust"></td>
+    </tr>
+    <tr>
+        <th class="text">Số ngày thuê </th>
+        <td id="rentdaydisplay"></td>
+    </tr>
+    <tr>
+        <th class="text">Loại dịch vụ:</th>
+        <td id="typeroomdisplay"></td>
+    </tr>
+    <tr>
+        <th class="text">Loại phòng:</th>
+        <td id="roomgrad"></td>
+    </tr>
+</table>
 <script src="task2-1.js"></script>
 
 </body>
