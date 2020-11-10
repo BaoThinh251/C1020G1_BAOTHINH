@@ -12,15 +12,65 @@ for(num = 1; num < 100; num+=1){
 } alert("Đã hoàn thành!");
 </script>-->
 <!--<script>
-    let celcius = prompt("Nhập nhiệt độ: ");
-        if(celcius > 100){
-            document.writeln("Giảm nhiệt độ!");
-        } else if(celcius < 20){
-            document.writeln("Tăng nhiệt độ!");
-        }
+   let temp = prompt("Nhập nhiệt độ: ");
+    if(temp>100){
+        document.writeln("Giảm nhiệt độ!");
+    } else if(temp<20){
+        document.writeln("Tăng nhiệt độ!");
+    }
 </script>-->
-<script>
+<!--<script>
+    let a = 1 ;
+    let b = 1 ;
+    let c;
+    let total = 0;
+    for(let i = 2; i < 20 ;i++) {
+        c = a + b;
+        a = b;
+        b = c;
+        document.writeln(c);
+        total = total + c;
+    }alert(total);
 
-</script>
+</script>-->
+<!--<script>
+let total = 0;
+let num = 1;
+for(num; num<=30;num++){
+    total+= num*7;
+}document.writeln(total);
+</script>-->
+<!--<script>
+    for(let num = 1; num<=100; num++){
+        if(num%3===0 && num%5===0){
+            document.writeln("FIZZBUZZ");
+        } else if(num%3===0){
+            document.writeln("FIZZ");
+        } else if(num%5===0) {
+            document.writeln("BUZZ");
+        } else {
+            document.writeln(num);
+    }}
+</script>-->
+<!--<script>
+        let startNum = parseInt(prompt("Nhập số bắt đầu"));
+        let endNum = parseInt(prompt("Nhập số kết thúc"));
+        let random = parseInt((Math.random() * (endNum - startNum)) + startNum);
+        let guest;
+        let count =0;
+        do {
+            guest = parseInt(prompt("Nhập số bạn muốn đoán"));
+            if (guest < random) {
+                alert("Số bạn vừa nhập nhỏ hơn. Mời bạn nhập lại");
+            } else if (guest > random) {
+                alert("Số bạn vừa nhập lớn hơn. Mời bạn nhập lại");
+            } else {
+                alert("Chúc mừng");
+                break;
+            }
+            count++;
+        } while (count <3)
+    alert("Bạn đã hết lượt!");
+</script>-->
 </body>
 </html>
