@@ -6,10 +6,25 @@
 </head>
 <body>
 <script>
-    let quantity = prompt("Nhập số lượng số nguyên tố cần tìm: ");
-    let count = 0;
-    let N = 2;
-    if(N % N == 0 && N % 1 == )
+    let quantity = parseInt(prompt("Nhập số lượng số nguyên tố cần tìm: "));
+    while(quantity !== 0) {
+        let count = 0;
+        let N = 2;
+        while (count < quantity) {
+            let counTing = 0;
+            for (let i = 1; i <= N; i++) {
+                if (N % i === 0) {
+                    counTing += 1;
+                }
+            }
+            if (counTing === 2) {
+                alert(N);
+                count++;
+            }
+            N++;
+        }
+        quantity = parseInt(prompt("Nhập số lượng số nguyên tố cần tìm: "));
+    }
 </script>
 </body>
 </html>

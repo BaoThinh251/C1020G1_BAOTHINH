@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5557508-b979-4a91-aad2-f4c4b49a8e6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Loop2.1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loop2.2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8-9.IF/Thuchanh/if-else.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8-9.IF/Thuchanh/keyboardevent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8-9.IF/Thuchanh/mousevent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10.Loop/Thuchanh/Loop4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../10.Loop/Thuchanh/Loop4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../7.Var_Datattype_Operator/Baitap/Chuyendoitiente.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../7.Var_Datattype_Operator/Baitap/Chuyendoitiente.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8-9.IF/Baitap/BMI.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../8-9.IF/Baitap/BMI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8-9.IF/Baitap/IF01.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../8-9.IF/Baitap/IF01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8-9.IF/Thuchanh/Sukienchuot.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8-9.IF/Thuchanh/Sukienkeyboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../8-9.IF/Thuchanh/cautrucif-else.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Looppractice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loop2.2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Loop2.2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CaseStudy/task1-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/task1-1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CaseStudy/task2-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../CaseStudy/task2-1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +37,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../7.Var_Datattype_Operator/Baitap/Chuyendoitiente.html" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CaseStudy/task2-1.js" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -57,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604905081345</updated>
-      <workItem from="1604905082593" duration="3428000" />
+      <workItem from="1604905082593" duration="8186000" />
     </task>
     <servers />
   </component>
@@ -68,9 +61,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="499" y="130" key="FileChooserDialogImpl" timestamp="1604906307289">
+    <state x="499" y="130" key="FileChooserDialogImpl" timestamp="1604912689445">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="130" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604906307289" />
+    <state x="499" y="130" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604912689445" />
   </component>
 </project>
