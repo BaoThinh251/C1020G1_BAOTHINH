@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Sample Screen:</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="arrayAdd"/>
+        </td>
+        <td>
+            <button type="button" id="button" onclick="addArray()">Add</button>
+        </td>
+        <td>
+            <button type="button" id="display" onclick="displayArray()">Display</button>
+        </td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td id="result"></td>
+    </tr>
+</table>
+<script>
+    let x = 0;
+    let array = [];
+    function addArray() {
+        array[x] = document.getElementById("arrayAdd").value;
+        alert("Element: " + array[x] + "Added at index: " + x);
+        document.getElementById("arrayAdd").value = "";
+    }
+    function displayArray() {
+        let e = "</hr>";
+        for( let i = 0; i <array.length; i++) {
+        e += "Element: " + i + "=" + array[i] + "<br>";
+        }document.getElementById("result").innerHTML = e;
+
+    }
+</script>
+</body>
+</html>
