@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = prompt("Nhập giá trị: ");
+    let x = [-10,-5,-3,5,7,9,11,15];
+    for(let i = 0; i < x.length; i++){
+        if(value == x[i]){
+            alert("Số :" + x[i] + " Tìm thấy ở vị trí: " + i);
+        } else {
+            alert("Số không nằm trong mảng!");
+        }
+        break;
+    }
+</script>
+
+</body>
+</html>
