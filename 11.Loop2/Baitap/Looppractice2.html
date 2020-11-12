@@ -25,18 +25,27 @@
     }document.writeln("Giai thừa của " + a + " là: " + b);
 </script>-->
 <script>
-    for(let y = 0; y < 5;y++){
-        for(let x = 0; x < 4;){
-            x++;
+    for(let y = 1; y < 6;y++) {
+        for (let x = 0; x < y; x++) {
             document.writeln("*");
-            for(let c = 1; c < 3;){
-                x++;
-                document.writeln("*");
-            }
-        }document.writeln("<br>");
+        }
+        document.writeln("<br>");
+    }
+    document.writeln("<br><br>");
+    for( y = 5; y > 0;y--){
+        for( x = 0; x < y;x++){
+            document.writeln("*");
+       }document.writeln("<br>");
+    }
+    document.writeln("<br><br>");
+    for (y=5;y>=0;y--){
+        for( x=y ;x >=1 ; x--) {
+            document.writeln("*");
+        }
+        document.writeln("<br>");
     }
 
-
 </script>
+
 </body>
 </html>
