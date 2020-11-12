@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>
+    let color = ["red","green","white","black"];
+    document.writeln(color.toString());
+    document.writeln("<br>");
+    document.writeln(color.join());
+    document.writeln("<br>");
+    document.writeln(color.join("+"));
+</script>-->
+<!--<script>
+    let num = [0,2,4,5,6,7,9,10,11,12,16];
+    let result = [num[0]];
+    for(let x = 1; x < num.length; x++){
+        if((num[x-1] % 2 == 0) && (num[x] % 2 ==0)){
+            result.push('-', num[x]);
+        } else {
+            result.push(num[x]);
+        }
+    } document.writeln(result.join(''));
+</script>-->
+<script>
+    let str = 'The WHIte BroW FoX';
+    let UPPER ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let lower = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for(let x=0; x<str.length; x++){
+        if(UPPER.indexOf(str[x]) !== -1) {
+            result.push(str[x].toLowerCase());
+        } else if(lower.indexOf(str[x]) !== -1) {
+            result.push(str[x].toUpperCase());
+        } else {
+            result.push(str[x]);
+        }
+    }
+    document.writeln(result.join(''));
+</script>
+</body>
+</html>
