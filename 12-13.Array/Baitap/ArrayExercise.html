@@ -44,7 +44,7 @@
         }
     }document.writeln(count);
 </script>-->
-<script>
+<!--<script>
     let num = [1,2,3,5,9,11,25,42,45,50];
     let V = prompt("Nhập số V: ");
     let check =false;
@@ -58,9 +58,29 @@
     } else {
         document.writeln("V not in the array");
     }
-</script>
-<script>
-
-</script>
+</script>-->
+<!--<script>
+    let num = [1,2,3,5,9,11,25,42,45,50];
+    let V = prompt("Nhập số V: ");
+    for( let x=0;x<num.length;x++){
+        if(V == num[x]){
+            num.splice(x,1);
+        }
+    }document.writeln(num);
+</script>-->
+<!--<script>
+    let num = [1,2,3,5,9,11,25,42,45,50];
+    num.sort(function(a, b) {
+        return b - a;
+    });
+    document.writeln(num);
+</script>-->
+<!--<script>
+    let numa = [1,2,3,5,9,11,25,42,45,50];
+    let numb = [-2,5,-7,7,-5,9,10,12,-1,11];
+    let numc = [];
+    numc = numa.concat(numb);
+    document.writeln(numc);
+</script>-->
 </body>
 </html>
