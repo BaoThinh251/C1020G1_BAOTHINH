@@ -29,10 +29,10 @@
         <th class="text">Địa chỉ: </th>
         <td>
             <select name="address" id="address">
-                <option value="20">Đà Nẵng</option>
-                <option value=10>Huế</option>
-                <option value="5">Quảng Nam</option>
-                <option value="0">Khác</option>
+                <option>Đà Nẵng</option>
+                <option>Huế</option>
+                <option>Quảng Nam</option>
+                <option>Khác</option>
             </select>
         </td>
     </tr>
@@ -40,17 +40,17 @@
         <th class="text">Customer rank: </th>
         <td>
             <select name="customer rank" id="cusrank">
-            <option value="15">Diamond</option>
-            <option value="10">Platinium</option>
-            <option value="5">Gold</option>
-            <option value="2">Silver</option>
-            <option value="0">Member</option>
+            <option>Diamond</option>
+            <option>Platinium</option>
+            <option>Gold</option>
+            <option>Silver</option>
+            <option>Member</option>
             </select>
         </td>
     </tr>
     <tr>
         <th class="text">Discount: </th>
-        <td><input type="text" name="discount" id='discount'/></td>
+        <td><input type="number" name="discount" id='discount'/></td>
     </tr>
     <tr>
         <th class="text">Số lượng khách đi kèm: </th>
@@ -58,7 +58,7 @@
     </tr>
     <tr>
         <th class="text">Số ngày thuê: </th>
-        <td><input type="text" name="rentdays" id='rentdays'/></td>
+        <td><input type="number" name="rentdays" id='rentdays'/></td>
     </tr>
     <tr>
         <th class="text">Loại dịch vụ: </th>
@@ -83,7 +83,7 @@
     <tr>
         <td>
             <button type="button" onclick="submit()">Đăng ký</button>
-            <button type="reset" onclick="reset()">Edit</button>
+            <button type="button" onclick="checked()">Check</button>
         </td>
     </tr>
 </table>
@@ -93,51 +93,87 @@
         <td id="nameDisplay"></td>
     </tr>
     <tr>
+        <td><button type="button" id="nameEdit" onclick="nameEdit()">Edit</button></td>
+    </tr>
+    <tr>
         <th class="text">Số tiền phải trả: </th>
         <td id="cost"></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="costDisplay" onclick="Cal()">Calculate</button></td>
     </tr>
     <tr>
         <th class="text">CMND/Căn cước công dân:</th>
         <td id="ID"></td>
     </tr>
     <tr>
+        <td><button type="button" id="idEdit" onclick="idEdit()">Edit</button></td>
+    </tr>
+    <tr>
         <th class="text">Ngày tháng năm sinh:</th>
         <td id="bDay"></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="birthEdit" onclick="birthEdit()">Edit</button></td>
     </tr>
     <tr>
         <th class="text">Email:</th>
         <td id="mail"></td>
     </tr>
     <tr>
+        <td><button type="button" id="emailEdit" onclick="emailEdit()">Edit</button></td>
+    </tr>
+    <tr>
         <th class="text">Địa chỉ:</th>
         <td id="addr"></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="addEdit" onclick="addEdit()">Edit</button></td>
     </tr>
     <tr>
         <th class="text">Customer rank: </th>
         <td id="cusRanking"></td>
     </tr>
     <tr>
+        <td><button type="button" id="cusRankEdit" onclick="cusRankEdit()">Edit</button></td>
+    </tr>
+    <tr>
         <th class="text">Giảm giá: </th>
         <td id="discountDisplay"></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="disEdit" onclick="disEdit()">Edit</button></td>
     </tr>
     <tr>
         <th class="text">Số khách đi kèm:</th>
         <td id="+Cust"></td>
     </tr>
     <tr>
+        <td><button type="button" id="addCusEdit" onclick="addCusEdit()">Edit</button></td>
+    </tr>
+    <tr>
         <th class="text">Số ngày thuê </th>
         <td id="rentdayDisplay"></td>
+    </tr>
+    <tr>
+        <td><button type="button" id="rentDayEdit" onclick="rentDayEdit()">Edit</button></td>
     </tr>
     <tr>
         <th class="text">Loại dịch vụ:</th>
         <td id="typeroomDisplay"></td>
     </tr>
     <tr>
+        <td><button type="button" id="typeRoomEdit" onclick="typeRoomEdit()">Edit</button></td>
+    </tr>
+    <tr>
         <th class="text">Loại phòng:</th>
         <td id="roomGrad"></td>
     </tr>
+    <tr>
+        <td><button type="button" id="roomGradeEdit" onclick="roomGradeEdit()">Edit</button></td>
+    </tr>
 </table>
-<script src="task2-1.js"></script>
+<script src="task3-1.js"></script>
 
 </body>
 </html>
