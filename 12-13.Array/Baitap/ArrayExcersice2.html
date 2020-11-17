@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>
+    let arr = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for(let i = 0; i < arr[0].length; i++){
+        document.write("row" + i + "<br>");
+        for(let j = 0; j < arr[i].length ;j++){
+            document.write(" " + arr[i][j] + "<br>");
+        }
+    }
+</script>-->
+<!--<script>
+    let arr = ['c', 's', 'c', '2', '6', '1'];
+    function reverse(array){
+        let output = [];
+        for (var i = arr.length - 1; i> -1; i--){
+            output.push(arr[i]);
+        }
+        return output;
+    }
+    document.write(reverse());
+</script>-->
+<!--<script>
+    function build() {
+        arrayName = prompt("Tên mảng: ");
+        arrayName = [];
+        arrayLength = parseInt(prompt("Nhâp độ lớn của mảng: "));
+        for (let i = 0; i < arrayLength; i++) {
+            arrayName.push(prompt("item"));
+        }
+        return arrayName;
+    }
+    document.write(build());
+    let countNaN = 0;
+    let numCount;
+        for (j = 0; j < arrayName.length; j++){
+            if(isNaN(arrayName[j])) {
+                countNaN++;
+            }
+    } numCount = arrayLength - countNaN;
+        alert(numCount);
+</script>-->
+<!--<script>
+    let arr = [1, 2, 1, 24];
+    document.write(arr.length);
+</script>-->
+<!--<script>
+    let arr1 = [];
+    let arr2 = [];
+    function build() {
+        arrayName = prompt("Tên mảng: ");
+        arrayName = [];
+        arrayLength = parseInt(prompt("Nhâp độ lớn của mảng: "));
+        for (let i = 0; i < arrayLength; i++) {
+            arrayName.push(prompt("item"));
+        }
+        return arrayName;
+    }
+    build(arr1);build(arr2);
+    let check = false;
+    function checked() {
+        if(arr1 === arr2){
+            check = true;
+        }
+    }
+    if(check = true){
+        alert("Same!");
+    } else {
+        alert("Different!");
+    }
+</script>-->
+<script>
+    let arr1 = [];
+    function build() {
+        arrayName = prompt("Tên mảng: ");
+        arrayName = [];
+        arrayLength = parseInt(prompt("Nhâp độ lớn của mảng: "));
+        for (let i = 0; i < arrayLength; i++) {
+            arrayName.push(prompt("item"));
+        }
+        return arrayName;
+    }
+    arr1 = build();
+    function rePlace() {
+       for(let i = 0; i < arr1.length; i++){
+           if(arr1[i] === "-"){
+               arr1.splice(i,1,"_");
+           }
+       }
+    }
+    rePlace(arr1);
+    alert(arr1);
+</script>
+</body>
+</html>
