@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="convertCtoF()">Đổi độ C sang độ F: </button>
+<button onclick="convertCtoK()">Đổi độ C sang độ K: </button>
+<script>
+    class temperature{
+        constructor(C, F, K) {
+            this.celcius = C;
+            this.farenheit = F;
+            this.kenvin = K;
+        } CtoF() {
+            return (this.celcius * 1.8) + 32;
+        } CtoK() {
+            return this.celcius + 273.15;
+        }
+    }
+    let C;
+    let F;
+    let K;
+    let temp;
+    function convertCtoF() {
+        temp = new temperature(C = parseFloat(prompt("Nhập độ C: ")));
+        F = parseFloat(temp.CtoF());
+        alert(F);
+    }
+    function convertCtoK() {
+        temp = new temperature(C = parseFloat(prompt("Nhập độ C: ")));
+        K = parseFloat(temp.CtoK());
+        alert(K);
+    }
+
+</script>
+</body>
+</html>
