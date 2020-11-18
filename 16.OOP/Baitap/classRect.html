@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas"  width="1280" height="720" style="border:1px solid #d3d3d3;"></canvas>
+<button onclick="draw()">Vẽ hình chữ nhật: </button>
+<button onclick="calS()">Tính diện tích: </button>
+<button onclick="calC()">Tính chu vi: </button>
+<p id="getS"></p>
+<p id="getC"></p>
+<script>
+    class Rect{
+        constructor(dài, rộng) {
+            this.width = dài;
+            this.height = rộng;
+        } getS() {
+            return this.width * this.height;
+        } getC() {
+            return (this.height + this.width)*2;
+        }
+    }
+    let rect;
+    function draw() {
+        let x = prompt("Nhập tọa độ x: ");
+        let y = prompt("Nhập tọa độ y: ");
+        rect = new Rect(parseInt(prompt("Nhập chiều dài: ")), parseInt(prompt("Nhập chiều rộng: ")));
+        let canvas = document.getElementById("myCanvas");
+
+        ctx = canvas.getContext("2d");
+        ctx.beginPath();
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(x, y, rect.width, rect.height);
+
+    }
+    function calS() {
+            let S = rect.getS();
+        document.getElementById("getS").innerHTML = parseInt(S) + "px";
+    }
+    function calC() {
+           let C = rect.getC();
+        document.getElementById("getC").innerHTML = parseInt(C);
+    }
+
+</script>
+</body>
+</html>
